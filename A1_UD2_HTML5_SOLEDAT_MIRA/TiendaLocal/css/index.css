@@ -1,18 +1,134 @@
+/* ==============================
+   PÁGINA PRINCIPAL - Librería Sole
+   ============================== */
+
+:root {
+  --fondo: #fdf8f3;
+  --texto: #3b2f2f;
+  --acento: #b99470;
+  --suave: #f4e6d4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: var(--suave);
+  padding: 20px 0;
+  border-bottom: 2px solid var(--acento);
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  color: var(--acento);
+}
+
+/* Sección principal */
+section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #6b5b4b;
+}
+
+/* Artículos de ofertas */
+article {
+  background-color: var(--suave);
+  border: 2px solid var(--acento);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+article h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--texto);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+article img {
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 6px;
  
-body{
-    background-color: #f0f0f0; 
-    color: #333;
 }
-h1{
-    color: darkblue;
-     text-align: center;
+
+article p {
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
-footer{
-    background-color: #222; 
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+article strong {
+  color: var(--acento);
 }
-footer > p{
-    padding: 10px;
+
+article a {
+  color: var(--acento);
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+article a:hover {
+  color: #a87c54;
+}
+
+
+footer {
+  background-color: var(--suave);
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--acento);
+  margin-top: auto;
+  font-style: italic;
+  color: var(--texto);
 }

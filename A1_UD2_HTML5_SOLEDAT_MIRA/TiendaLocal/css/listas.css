@@ -1,14 +1,122 @@
-body{
-    background-color: #f0f0f0; 
-    color: #333;
+
+:root {
+  --fondo: #fdf8f3;
+  --texto: #3b2f2f;
+  --acento: #b99470;
+  --suave: #f4e6d4;
 }
-h1{
-    color: darkblue;
-     text-align: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-footer{
-    background-color: #222; 
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: var(--suave);
+  padding: 20px 0;
+  border-bottom: 2px solid var(--acento);
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  color: var(--acento);
+}
+
+/* Secciones */
+section {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: var(--suave);
+  border: 2px solid var(--acento);
+  border-radius: 10px;
+  padding: 30px;
+  
+}
+
+section + section {
+  margin-top: 40px;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--texto);
+}
+
+
+ol, ul {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+ol li, ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+li h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--texto);
+  margin-bottom: 5px;
+}
+
+li p {
+  font-size: 1rem;
+  color: #6b5b4b;
+}
+
+a {
+  color: var(--acento);
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+
+a:hover {
+  color: #a87c54;
+}
+
+footer {
+  background-color: var(--suave);
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--acento);
+  margin-top: auto;
+  font-style: italic;
+  color: var(--texto);
 }

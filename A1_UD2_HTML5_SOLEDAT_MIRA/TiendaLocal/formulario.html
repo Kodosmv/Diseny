@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libreria Sole - Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body  style="background-color: #f0f0f0; color: #333;">
     <header>
@@ -16,22 +17,22 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="comprar"> 
         <form>
            
             <h4>Completa tus datos para realizar la compra</h4>
 
             <label for="nombre">Nombre completo:</label><br>
-            <input type="text" id="nombre" name="nombre" required maxlength="100"><br>
+            <input type="text" id="nombre" name="nombre" ><br>
 
             <label for="dni">DNI (8 dígitos + letra):</label><br>
-            <input type="text" id="dni" name="dni" maxlength="9" required><br>
+            <input type="text" id="dni" name="dni" ><br>
 
             <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" required ><br>
+            <input type="email" id="email" name="email" ><br>
 
             <label for="productos">Productos deseados:</label><br>
-            <textarea id="productos" name="productos"  maxlength="8000" placeholder="Que quieres compra?" required></textarea><br><br>
+            <textarea id="productos" name="productos"  placeholder="Que quieres compra?" ></textarea><br><br>
 
             <button type="submit">Enviar pedido</button>
             <button type="reset">Borrar</button>
