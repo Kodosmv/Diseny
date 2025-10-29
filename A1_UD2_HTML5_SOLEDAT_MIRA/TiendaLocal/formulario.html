@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Sole - Formulario</title>
+</head>
+<body  style="background-color: #f0f0f0; color: #333;">
+    <header>
+        <h1 style="color: darkblue; text-align: center;" > Formulario de Compra</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listas.html">Catálogo</a></li>
+                <li><a href="formulario.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form>
+           
+            <h4>Completa tus datos para realizar la compra</h4>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required maxlength="100"><br>
+
+            <label for="dni">DNI (8 dígitos + letra):</label><br>
+            <input type="text" id="dni" name="dni" maxlength="9" required><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required ><br>
+
+            <label for="productos">Productos deseados:</label><br>
+            <textarea id="productos" name="productos"  maxlength="8000" placeholder="Que quieres compra?" required></textarea><br><br>
+
+            <button type="submit">Enviar pedido</button>
+            <button type="reset">Borrar</button>
+            <br>
+            
+        </form>
+    </section>
+    <footer style="background-color: #222; color: white; text-align: center; padding: 10px;">
+        <p style="padding: 10px;"> Poco que ver por aquí ya UnU </p>
+    </footer>
+</body>
+</html>
