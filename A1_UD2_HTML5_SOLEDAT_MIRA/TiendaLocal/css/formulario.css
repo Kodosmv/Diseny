@@ -21,7 +21,7 @@ body {
   flex-direction: column;
 }
 
-/* Header */
+
 header {
   background-color: var(--suave);
   padding: 20px 0;
@@ -53,7 +53,7 @@ nav a:hover {
   color: var(--acento);
 }
 
-/* Sección formulario */
+
 #comprar {
   flex: 1;
   display: flex;
