@@ -1,1 +1,18 @@
  
+body{
+    background-color: #f0f0f0; 
+    color: #333;
+}
+h1{
+    color: darkblue;
+     text-align: center;
+}
+footer{
+    background-color: #222; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer > p{
+    padding: 10px;
+}
