@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Observaciones - Menú</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #ffe4ec;
+                background-size: cover;
+                background-position: center;
+                transition: background-image 1s ease-in-out;
+            }
+            .tarjeta {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+            .btn-opcion {
+                border: 1px solid #333;
+                border-radius: 20px;
+                padding: 5px 15px;
+                background-color: white;
+                transition: 0.2s;
+            }
+            .btn-opcion.seleccion {
+                background-color: #333;
+                color: white;
+            }
+            .btn-cerrar {
+                border: 2px solid #f48fb1;
+                color: #f48fb1;
+                background-color: white;
+                border-radius: 25px;
+                padding: 5px 25px;
+                font-weight: bold;
+            }
+            .btn-cerrar:hover {
+                background-color: #f48fb1;
+                color: white;
+            }
+            .navbar {
+                position: sticky;
+                top: 0;
+                z-index: 1020;
+            }
+            .carousel-item img {
+                height: 400px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body >
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-dark" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="obeservaciones.html">Observaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+       
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/car1.jpg" class="d-block w-100" alt="Primera imagen">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/car2.jpg" class="d-block w-100" alt="Segunda imagen">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/car3.jpg" class="d-block w-100" alt="Tercera imagen">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="container my-5">
+            <div class="tarjeta p-4 mx-auto" style="max-width: 700px;">
+                <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                    <div>
+                        <strong>Fecha</strong>
+                        <span class="text-warning ms-2">Sep 1, 2025</span>
+                    </div>
+                    <h4 class="text-secondary mb-0">Juan Alberto García Gámez</h4>
+                    <img src="img/niño.jpg" alt="Foto perfil" class="rounded-circle" width="40" height="40">
+                </div>
+
+                <div class="mb-4">
+                    <p class="fw-semibold">¿Qué le ha parecido el menú de hoy?</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn-opcion">Muy malo</button>
+                        <button class="btn-opcion">Malo</button>
+                        <button class="btn-opcion seleccion">Regular</button>
+                        <button class="btn-opcion">Bueno</button>
+                        <button class="btn-opcion">Muy bueno</button>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <p class="fw-semibold">¿Cuál ha sido el mejor plato?</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn-opcion seleccion">Principal</button>
+                            <button class="btn-opcion">Guarnición</button>
+                            <button class="btn-opcion">Postre</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="fw-semibold">¿Cuál ha sido el peor plato?</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn-opcion">Principal</button>
+                            <button class="btn-opcion">Guarnición</button>
+                            <button class="btn-opcion seleccion">Postre</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="fw-semibold">Observaciones:</p>
+                    <textarea class="form-control border-0 border-bottom" rows="3" placeholder="Escriba aquí sus comentarios..."></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn-cerrar">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

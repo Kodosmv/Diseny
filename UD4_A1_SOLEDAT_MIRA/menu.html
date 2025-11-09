@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menú Semanal</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .dia-impar {
+                background-color: #ffe4ec !important;
+            }
+            .titulo-color {
+                color: #f48fb1;
+            }
+            .navbar {
+                position: sticky;
+                top: 0;
+                z-index: 1020;
+            }
+            .carousel-item img {
+                height: 400px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-dark" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="obeservaciones.html">Observaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/car1.jpg" class="d-block w-100" alt="Primera imagen">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/car2.jpg" class="d-block w-100" alt="Segunda imagen">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/car3.jpg" class="d-block w-100" alt="Tercera imagen">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="text-center mt-4">
+            <h1 class="titulo-color fw-bold">Menú Semanal</h1>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <img src="img/niño.jpg" class="rounded-circle" width="40" height="40" alt="Perfil">
+                <span class="fw-semibold">Menú de Juan Alberto García Gámez</span>
+            </div>
+            <p class="mb-0 fs-5 text-secondary">2025 · Septiembre</p>
+            <p class="fw-semibold text-warning">Semana 1 · 1~5</p>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-2 p-3 border rounded dia-impar">
+                    <h5 class="text-center fw-semibold">Lunes</h5>
+                    <p><strong>Plato principal:</strong> Albóndigas de pollo con salsa de tomate</p>
+                    <p><strong>Guarnición:</strong> Arroz blanco</p>
+                    <p><strong>Postre:</strong> Fruta</p>
+                    <p><strong>Bebida:</strong> Agua</p>
+                </div>
+
+                <div class="col-md-2 p-3 border rounded bg-white">
+                    <h5 class="text-center fw-semibold">Martes</h5>
+                    <p><strong>Plato principal:</strong> Lentejas estofadas con verduras y jamón</p>
+                    <p><strong>Guarnición:</strong> Pan integral</p>
+                    <p><strong>Postre:</strong> Yogur natural</p>
+                    <p><strong>Bebida:</strong> Agua</p>
+                </div>
+
+                <div class="col-md-2 p-3 border rounded dia-impar">
+                    <h5 class="text-center fw-semibold">Miércoles</h5>
+                    <p><strong>Plato principal:</strong> Filete de merluza rebozada al horno</p>
+                    <p><strong>Guarnición:</strong> Puré de patata y zanahoria</p>
+                    <p><strong>Postre:</strong> Fruta</p>
+                    <p><strong>Bebida:</strong> Agua</p>
+                </div>
+
+                <div class="col-md-2 p-3 border rounded bg-white">
+                    <h5 class="text-center fw-semibold">Jueves</h5>
+                    <p><strong>Plato principal:</strong> Espaguetis con salsa boloñesa</p>
+                    <p><strong>Guarnición:</strong> Ensalada de tomate y lechuga</p>
+                    <p><strong>Postre:</strong> Fruta</p>
+                    <p><strong>Bebida:</strong> Agua</p>
+                </div>
+
+                <div class="col-md-2 p-3 border rounded dia-impar">
+                    <h5 class="text-center fw-semibold">Viernes</h5>
+                    <p><strong>Plato principal:</strong> Tortilla de patatas y cebolla</p>
+                    <p><strong>Guarnición:</strong> Guisantes salteados</p>
+                    <p><strong>Postre:</strong> Natillas caseras</p>
+                    <p><strong>Bebida:</strong> Agua</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-4">
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 text-center">
+                    <img src="img/2.png" alt="fruta" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="img/3+.png" alt="alergenos " class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

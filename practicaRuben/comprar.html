@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar La Esquina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/comprar.css">
+</head>
+<body>
+
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <h1>Bazar La Esquina</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <nav>
+                        <table>
+                            <tr>
+                                <td><a href="./index.html">Inicio</a></td>
+
+                                <!-- Espaciado, los simbolos son espacios en codigo html, los uso para que exista un espacio entre los elementos del producto -->
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                                <td><a href="./productos.html">Productos</a></td>
+
+                                <!-- Espaciado, los simbolos son espacios en codigo html, los uso para que exista un espacio entre los elementos del producto -->
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                                <td><a href="./comprar.html">Comprar producto</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Comprar producto</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Nombre completo: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Nombre completo" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dni">DNI: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="dni" id="dni" placeholder="DNI" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Correo electrónico: </label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="products">Productos: </label>
+                    </td>
+                    <td>
+                        <textarea name="products" id="products" placeholder="Productos..." required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2025 Bazar La Esquina. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
