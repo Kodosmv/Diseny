@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú Semanal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .dia-impar {
+      background-color: #ffe4ec !important;
+    }
+    .titulo-color {
+      color: #f48fb1;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- NAV + CARRUSEL -->
+  <div class="container-fluid bg-light py-2">
+    <div class="row align-items-center">
+      <!-- NAV -->
+      <div class="col-md-4 d-flex justify-content-start">
+        <nav class="nav">
+          <a class="nav-link fw-bold text-dark" href="index.html">Menú</a>
+          <a class="nav-link fw-bold text-dark" href="observaciones.html">Observaciones</a>
+        </nav>
+      </div>
+      <!-- CARRUSEL -->
+      <div class="col-md-8">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img1.jpg" class="d-block w-100 rounded" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img2.jpg" class="d-block w-100 rounded" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img3.jpg" class="d-block w-100 rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TÍTULO -->
+  <div class="text-center mt-4">
+    <h1 class="titulo-color fw-bold">Menú Semanal</h1>
+    <p class="mb-0 fs-5 text-secondary">2025 · Septiembre</p>
+    <p class="fw-semibold text-warning">Semana 1 · 1–5</p>
+  </div>
+
+  <!-- MENÚ SEMANAL -->
+  <div class="container mt-4">
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-md-2 p-3 border rounded dia-impar">
+        <h5 class="text-center fw-semibold">Lunes</h5>
+        <p><strong>Plato principal:</strong> Albóndigas de pollo con salsa de tomate</p>
+        <p><strong>Guarnición:</strong> Arroz blanco</p>
+        <p><strong>Postre:</strong> Fruta</p>
+        <p><strong>Bebida:</strong> Agua</p>
+      </div>
+
+      <div class="col-md-2 p-3 border rounded bg-white">
+        <h5 class="text-center fw-semibold">Martes</h5>
+        <p><strong>Plato principal:</strong> Lentejas estofadas con verduras y jamón</p>
+        <p><strong>Guarnición:</strong> Pan integral</p>
+        <p><strong>Postre:</strong> Yogur natural</p>
+        <p><strong>Bebida:</strong> Agua</p>
+      </div>
+
+      <div class="col-md-2 p-3 border rounded dia-impar">
+        <h5 class="text-center fw-semibold">Miércoles</h5>
+        <p><strong>Plato principal:</strong> Filete de merluza rebozada al horno</p>
+        <p><strong>Guarnición:</strong> Puré de patata y zanahoria</p>
+        <p><strong>Postre:</strong> Fruta</p>
+        <p><strong>Bebida:</strong> Agua</p>
+      </div>
+
+      <div class="col-md-2 p-3 border rounded bg-white">
+        <h5 class="text-center fw-semibold">Jueves</h5>
+        <p><strong>Plato principal:</strong> Espaguetis con salsa boloñesa</p>
+        <p><strong>Guarnición:</strong> Ensalada de tomate y lechuga</p>
+        <p><strong>Postre:</strong> Fruta</p>
+        <p><strong>Bebida:</strong> Agua</p>
+      </div>
+
+      <div class="col-md-2 p-3 border rounded dia-impar">
+        <h5 class="text-center fw-semibold">Viernes</h5>
+        <p><strong>Plato principal:</strong> Tortilla de patatas y cebolla</p>
+        <p><strong>Guarnición:</strong> Guisantes salteados</p>
+        <p><strong>Postre:</strong> Natillas caseras</p>
+        <p><strong>Bebida:</strong> Agua</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IMÁGENES ALÉRGENOS -->
+  <div class="container mt-5 mb-4">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4 text-center">
+        <img src="alergenos1.jpg" alt="Alergenos 1" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="alergenos2.jpg" alt="Alergenos 2" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
